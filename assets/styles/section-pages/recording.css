@@ -1,0 +1,75 @@
+.recording {
+    height: 100vh;
+    background-image: url('/assets/images/recording-back.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 130%;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    position: relative;
+}
+
+.recording::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.aside {
+    position: absolute;
+    right: 10%;
+    width: 400px;
+    height: 85%;
+    background-color: rgba(255, 255, 255, 0.19);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    z-index: 0;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.aside_link {
+    width: 340px;
+    height: 50px;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recording_back_text {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+
+@media (max-width: 546px) {
+    .aside {
+        width: 90%;
+        max-width: none;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 10px;
+    }
+
+    .aside_link {
+        width: 80%;
+        max-width: none;
+    }
+}

@@ -1,0 +1,257 @@
+a {
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+.subscribe {
+    padding: 10px 60px;
+    border: 2px solid #67357D;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.subscribe:hover {
+    transform: scale(1.1);
+}
+
+.subscribe:active {
+    transform: scale(1);
+}
+
+li {
+    list-style-type: none;
+}
+
+.slider_description__white {
+    color: white;
+}
+
+.preview__button {
+    display: block;
+    position: relative;
+    text-align: center;
+    max-width: 200px;
+    padding: 6px 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+    color: #66357D;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.about-section__description {
+    color: #67357D;
+    font-size: 18px;
+}
+
+.about-section__title {
+    font-size: 46px;
+    color: #1C1C1C;
+    text-align: center;
+    width: auto;
+    
+}
+
+.main_desc {
+    font-size: 16px;
+    color: #1C1C1C;
+}
+
+.link_recording {
+    padding: 12px 27px;
+    border: 1px solid #67357D;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.link_recording:hover {
+    background-color: #67357D;
+    color: #fff;
+}
+
+.link_recording:active {
+    transform: scale(0.95);
+}
+
+@media (max-width:700px) {
+    .about-section__title {
+        font-size: 6vw;
+    }
+}
+
+.price_card_title {
+    font-size: 23px;
+    color: #474A51;
+    width: 90%;
+}
+
+.price_card_desc {
+    font-size: 20px;
+    color: #474747;
+    width: 90%;
+}
+
+.price_arrow {
+    font-size: 16px;
+    color: #CD85ED;
+    width: 90%;
+}
+
+@media (max-width: 522px) {
+    .price_card_title {
+        font-size: 16px;
+    }
+    
+    .price_card_desc {
+        font-size: 16px;
+    }
+}
+
+.recording_back_text {
+    font-size: 170px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    opacity: 0.5;
+    width: auto;
+}
+
+.back_text_span {
+    font-size: 190px;
+}
+
+.aside_title {
+    font-size: 56px;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+
+.aside_description {
+    font-size: 17px;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+
+.aside_link {
+    color: #fff;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.aside_link:hover {
+    color: #66357D;
+}
+
+.aside_link:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 636px) {
+    .recording_back_text {
+        display: none;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .aside_title {
+        font-size: 9vw;
+    }
+    .aside_description {
+        font-size: 5vw;
+    }
+}
+
+.person_name {
+    max-width: 100%;
+    font-size: 25px;
+    color: #000;
+}
+
+.person_review {
+    max-width: 90%;
+    font-size: 17px;
+    color: #000;
+    opacity: 0.8;
+    margin-top: 15px ;
+}
+
+@media (max-width:496px) {
+    .person_name {
+        font-size: 6vw;
+    }
+    .person_review {
+        font-size: 4vw;
+    }
+}
+
+.tab {
+    font-size: 24px;
+    color: #1C1C1C;
+    flex: 1; 
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+@media (max-width:714px) {
+    .tab {
+        font-size: 4vw;
+    }
+}
+
+.form_title {
+    color: #66357D;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 472px) {
+    .form_title {
+        font-size: 9vw;
+    }
+}
+
+.online_sub_title {
+    font-size: 55px;
+    color: #fff;
+}
+
+@media (max-width: 720px) {
+    .online_sub_title {
+        font-size: 8vw;
+    }
+}
+
+.contact__margin-bottom {
+    margin-bottom: 70px;
+}
+
+@media (max-width: 600px) {
+    .contact__margin-bottom {
+        margin-bottom: 20px;
+    }
+}
+
+.footer_title {
+    font-size: 24px;
+    color: #FAECEC;
+    margin: 25px 0;
+    max-width: 100%;
+}
+
+.footer_list {
+    font-size: 18px;
+    color: #FAECEC;
+    margin: 25px 0;
+    max-width: 100%;
+}
+
+.preview_slider_title {
+    font-size: 30px;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+.person {
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    max-width: 550px;
+    height: 236px;
+    padding: 20px;
+}
+
+.card_reviews {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:496px) {
+    .person {
+        height: 200px;
+    }
+}

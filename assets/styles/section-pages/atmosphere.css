@@ -1,0 +1,18 @@
+.atmosphere
+.about-section__title {
+    margin-top: 25px;
+}
+
+.slider2 {
+    overflow: hidden;
+    margin-top: 30px;
+}
+  
+.slider2 img {
+    width: 100%;
+    display: none;
+}
+  
+.slider2 img:first-child {
+    display: block;
+}

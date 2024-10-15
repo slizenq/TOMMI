@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('./section-pages/about-tommi.css');
+@import url('./section-pages/atmosphere.css');
+@import url('./section-pages/brands.css');
+@import url('./section-pages/contats.css');
+@import url('./section-pages/footer.css');
+@import url('./section-pages/header.css');
+@import url('./section-pages/online-recording.css');
+@import url('./section-pages/our-works.css');
+@import url('./section-pages/preview.css');
+@import url('./section-pages/recording.css');
+@import url('./section-pages/registration-service.css');
+@import url('./section-pages/reviews.css');
+@import url('./section-pages/services.css');
+@import url('/assets/ui/ui.css');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header_wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    width: calc(85% + 15px);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section__margin {
+    margin-top: 75px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

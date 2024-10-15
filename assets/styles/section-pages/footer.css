@@ -1,0 +1,33 @@
+footer {
+    background-color: #70569F;
+    padding: 40px 5% 80px 5%;
+}
+
+.list {
+    padding: 30px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.list_section {
+    width: 300px;
+    gap: 100px;
+}
+
+@media (max-width: 650px) {
+    .list {
+        flex-wrap: wrap;
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .list_section {
+        width: 80%; 
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+}

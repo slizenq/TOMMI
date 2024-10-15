@@ -1,0 +1,84 @@
+.about_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 29px 0;
+    gap: 25px;
+}
+
+.text_ab__margin {
+    margin: 50px 0;
+}
+
+.merits {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.merits_left {
+    width: 460px;
+}
+
+.merits_left
+p {
+    max-width: 440px;
+    margin-top: 0;
+}
+
+.merits_right {
+    width: 560px;
+}
+
+.merits_right
+p {
+    max-width: 480px;
+}
+
+@media (min-width: 1266px) {
+    img {
+        width: calc(50vw - 100px);
+    }
+
+    p {
+        width: calc(50vw - 100px); 
+    }
+}
+
+@media (max-width: 1100px) {
+    .merits_block {
+        width: 50%;
+    }    
+}
+
+@media (max-width: 578px) {
+    .merits {
+        flex-wrap: wrap;
+    }
+    .merits_block {
+        width: 100%;
+    }
+    .merits_left {
+        text-align: left;
+    }
+}
+
+@media (max-width: 474px) {
+    .merits_block
+    .main_desc {
+        font-size: 4vw;
+    }
+    .text_ab__margin {
+        margin: 29px 0;
+    }
+}
+
+@media (max-width: 484px) {
+    .about_header {
+        justify-content: center;
+    }
+}
+
