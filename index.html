@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOMMI STUDIO</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+
+<section class="elementary">
+    <div class="header_wrapper">
+        <header>
+            <div class="left_align">
+                <a href="#"><img src="./assets/images/TOMMI STUDIO.svg" alt="logo" style="width: 219px;"></a>
+                <ul class="header_ul">
+                    <a href="#"><li>О нас</li></a>
+                    <a href="#"><li>Услуги</li></a>
+                    <a href="#"><li>Наши работы</li></a>
+                    <a href="#"><li>Отзывы</li></a>
+                    <a href="#"><li>Контакты</li></a>
+                </ul>
+            </div>
+            <a href="#record" class="subscribe subscribe_header__none">ОНЛАЙН ЗАПИСЬ</a>
+
+            <div class="burger_menu">
+                <div class="burger_icon">
+                    <img src="./assets/images/burger.png" alt="burger">
+                </div>
+            </div>
+        </header>
+        <ul class="header_ul modal">
+            <a href="#"><li>О нас</li></a>
+            <a href="#"><li>Услуги</li></a>
+            <a href="#"><li>Наши работы</li></a>
+            <a href="#"><li>Отзывы</li></a>
+            <a href="#"><li>Контакты</li></a>
+        </ul>
+
+    </div>
+
+    <div class="preview">
+        <div class="container">
+            <div class="slider">
+                <div class="slide">
+                    <div class="slide_list1">
+                        <div class="preview_slider2">
+                            <p class="preview_slider_title">НОГТЕВАЯ СТУДИЯ</p>
+                            <img src="./assets/images/preview/preview-logo.svg" style="width: 560px;" alt="logo">
+                            <a href="#serv" class="link-rec">Выбрать услугу</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_list2">
+                        <div class="preview_slider">
+                            <p class="preview_slider_title">НОГТЕВАЯ СТУДИЯ</p>
+                            <img src="./assets/images/preview/preview-logo.svg" style="width: 560px;" alt="logo">
+                            <a href="#serv" class="link-rec">Выбрать услугу</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="slide">
+                    <div class="slide_list1">
+    
+                    </div>
+                 </div>
+            </div>
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </div>
+        <script>
+            let slideIndex = 1;
+                showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                const slides = document.querySelectorAll(".slide");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 1; i < slides.length; i++) {
+                    slides[i].style.transition = "transform 0.5s"; 
+                    slides[i].style.transform = "translateX(-100%)"; 
+            }
+            slides[slideIndex - 1].style.transform = "translateX(0)";
+            }
+
+            function automaticSlide() {
+            setInterval(() => {
+                plusSlides(1); 
+            }, 5000);
+            }
+
+            automaticSlide(); 
+
+            document.querySelector(".prev").addEventListener("click", () => plusSlides(-1));
+            document.querySelector(".next").addEventListener("click", () => plusSlides(1));
+        </script>
+        
+
+        <div class="slider_description">
+            <p class="slider_description__white">Записаться сейчас и ощутить истинное волшебство красоты!</p>
+            <a href="#record" class="slider_description__white slider__button">ОНЛАЙН ЗАПИСЬ</a>
+        </div>
+    </div>
+</section>
+
+<section class="about_tommi section__margin">
+    <div class="container">
+        <p class="about-section__description">ABOUT TOMMI STUDIO</p>
+        <div class="about_header">
+            <p class="about-section__title">МЕСТО ВАШЕГО<br>ПРЕОБРАЖЕНИЯ</p>
+            <a href="#record" class="link_recording">Онлайн запись</a>            
+        </div>
+        <div class="merits">
+            <div class="merits_left merits_block">
+                <p class="main_desc text_ab__margin">Tommi Studio - это не просто ногтевая студия, это истинное пространство красоты и вдохновения. Наша цель - не просто ухаживать за ногтями, мы создаем истинное произведение искусства на ваших руках.</p>
+                <img src="./assets/images/about/about-img1.jpg" alt="image">
+            </div>
+            <div class="merits_right merits_block">
+                <img src="./assets/images/about/about-img2.jpg" alt="image">
+                <p class="main_desc text_ab__margin">В Tommi Studio каждая деталь продумана до мелочей - от уютного интерьера до профессиональных инструментов. Наша атмосфера наполнена радостью, вдохновением и заботой, чтобы каждая посетительница чувствовала себя особенной и желанной. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service section__margin" id="serv">
+    <div class="container">
+        <p class="about-section__title">НАШИ УСЛУГИ</p>
+        <div class="price">
+            <div class="price_card">
+                <p class="price_card_title">— Брови</p>
+                <p class="price_card_desc">Студия Маникюра и Педикюра 
+                    Наращивание Ресниц и Брови 
+                    в Ростове-на-Дону...</p>
+                <p class="price_arrow">
+                    400 ₽
+                    <img src="./assets/images/arrow.svg" style="width: 14px;" alt="arrow">
+                </p>
+            </div>
+            <div class="price_card">
+                <p class="price_card_title">— Маникюр</p>
+                <p class="price_card_desc">Студия Маникюра и Педикюра Наращивание Ресниц и Брови в Ростове-на-Дону на Северно</p>
+                <p class="price_arrow">
+                    800 ₽
+                    <img src="./assets/images/arrow.svg" style="width: 14px;" alt="arrow">
+                </p>
+            </div>
+            <div class="price_card">
+                <p class="price_card_title">— Педикюр</p>
+                <p class="price_card_desc">Частичная, полная</p>
+                <p class="price_arrow">
+                    1 200 ₽
+                    <img src="./assets/images/arrow.svg" style="width: 14px;" alt="arrow">
+                </p>
+            </div>
+            <div class="price_card">
+                <p class="price_card_title">— Наращивание Ресниц</p>
+                <p class="price_card_desc">OPI, Luxio, Kinetics</p>
+                <p class="price_arrow">
+                    1 400 ₽
+                    <img src="./assets/images/arrow.svg" style="width: 14px;" alt="arrow">
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="atmosphere section__margin">
+    <div class="container">
+        <p class="about-section__description" style="text-align: center; width: 100%;">АТМОСФЕРА TOMMI STUDIO</p>
+        <p class="about-section__title">ВСЕ ПРОДУМАНО<br>ДО МЕЛОЧЕЙ</p>
+        
+        <div class="slider2">
+            <img src="/assets/images/slide1.jpg" alt="Slide 1">
+            <img src="/assets/images/slide2.jpg" alt="Slide 2">
+          </div>
+          
+          <script>
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.slider2 img');
+            const slideCount = slides.length;
+          
+            function nextSlide() {
+              slides[currentSlide].style.display = 'none';
+              currentSlide = (currentSlide + 1) % slideCount;
+              slides[currentSlide].style.display = 'block';
+            }
+          
+            setInterval(nextSlide, 4500);
+          </script>
+    </div>
+</section>
+
+<section class="brands">
+    <div class="container">
+        <p class="about-section__title section__margin">ИСПОЛЬЗУЕМ ПРЕМИАЛЬНЫЙ<br>МАТЕРИАЛЫ</p>
+
+        <div class="brands_list">
+            <div class="brand">
+                <img src="./assets/images/brands/emi.png" style="width: 160px;" alt="brand">
+            </div>
+            <div class="brand">
+                <img src="./assets/images/brands/luxio.png" style="width: 160px;" alt="brand">
+            </div>
+            <div class="brand">
+                <img src="./assets/images/brands/bandi.png" style="width: 160px;" alt="brand">
+            </div>
+            <div class="brand">
+                <img src="./assets/images/brands/neonail.png" style="width: 160px;" alt="brand">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="recording section__margin">
+    <p class="recording_back_text">
+        QUICK
+        <br>
+        <span class="back_text_span">SIGN UP</span>
+    </p>
+    <div class="aside">
+        <p class="aside_title">ОПЕРАТИВНАЯ ЗАПИСЬ</p>
+        <p class="aside_description">Запишитесь в день посещения салона
+            на следующий визит и получите скидку
+            10% на услугу.</p>
+        <a href="#record" class="aside_link">Онлайн запись</a>
+    </div>
+<div></div>
+</section>
+
+<section class="service section__margin">
+    <p class="about-section__title">НАШИ РАБОТЫ</p>
+
+    <div class="products__content wrap">
+        <div class="products__tabs">
+            <p class="tab tab_active tab-button" data-id="stock">Педикюр</p>
+            <p class="tab tab-button" data-id="recommended">Показать все</p>
+            <p class="tab tab-button" data-id="new">Брови</p>
+            <p class="tab tab-button" data-id="hit">Маникюр</p>
+        </div>
+        <div class="product__cards content active cards__flex" id="stock">
+            <img src="./assets/images/works/pedicure/pedicure1.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/pedicure/pedicure2.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/pedicure/pedicure3.jpg" class="card__width" alt="img">
+        </div>
+        <div class="product__cards content" id="recommended">2
+            <img src="./assets/images/works/manicure/img2.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/manicure/img3.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/manicure/img4.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/brows/brow1.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/brows/brow2.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/brows/brow3.jpeg" class="card__width" alt="img">
+            <img src="./assets/images/works/pedicure/pedicure1.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/pedicure/pedicure2.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/pedicure/pedicure3.jpg" class="card__width" alt="img">
+        </div>
+        <div class="product__cards content" id="new">
+            <img src="./assets/images/works/brows/brow1.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/brows/brow2.jpg" class="card__width" alt="img">
+            <img src="./assets/images/works/brows/brow3.jpeg" class="card__width" alt="img">
+        </div>
+        <div class="product__cards content" id="hit">
+            <img src="./assets/images/works/manicure/img2.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/manicure/img3.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/manicure/img4.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/manicure/img5.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/manicure/img6.jpg" class="card__width" alt="image">
+            <img src="./assets/images/works/manicure/img7.jpg" class="card__width" alt="image">
+        </div>
+    </div>
+</section>
+
+<section class="reviews section__margin">
+    <p class="about-section__title">ЦЕНИМ МНЕНИЕ ВАЖДОГО</p>
+    <div class="card_reviews">
+        <div class="person">
+            <p class="person_name">Татьяна</p>
+            <p class="person_review">Я в восторге от мастерства мастеров студии Tommi Studio! Мне сделали потрясающий маникюр, атмосфера студии просто завораживающая. Очень рекомендую!!!!</p>
+        </div>
+        <div class="person">
+            <p class="person_name">Оля</p>
+            <p class="person_review">Посещение Tommi Studio стало настоящим открытием для меня. Мастера внимательно выслушали мои пожелания и создали идеальный дизайн для моих ногтей. Я в восторге от результата и обязательно вернусь снова!</p>
+        </div>
+    </div>
+</section>
+
+<section class="online_recording section__margin" id="record">
+    <div class="container">
+        <form class="form-container">
+            <h2 class="form_title">Запишитесь<br>на слугу</h2>
+            <input type="name" placeholder="Имя*" required>
+            <br>
+            <div class="input__flex">
+                <input type="tel" placeholder="Телефон*" required>
+                <input type="text" placeholder="Услуга">
+            </div>
+            <textarea placeholder="Дополнительно"></textarea>
+            <br>
+            <button type="submit">Подтвердить</button>
+            <p class="form__checkbox">При нажатии на кнопку, я даю свое согласие на обработку моих персональных данных на условиях и для целей определенных в политике конфиденциальности.</p>
+        </form>
+    </div>
+</section>
+
+<section class="online_sub">
+    <h1 class="online_sub_title">ЖДЕМ ТЕБЯ В<br> НИШИХ СТУДИЯХ</h1>
+    <a href="#record" class="online_sub__button">ОНЛАЙН ЗАПИСЬ</a>
+</section>
+
+<section class="contact section__margin">
+    <p class="about-section__title contact__margin-bottom">Контакты</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1352.78537442003!2d39.726102013872584!3d47.3031874618279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDE4JzEzLjEiTiAzOcKwNDMnMzguMSJF!5e0!3m2!1sru!2sru!4v1714699028713!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="geo_tommi"></iframe>
+</section>
+
+<footer class="section__margin">
+    <div class="list">
+        <div class="list_section">
+            <img src="./assets/images/footer_logo.svg" style="width: 310px;" alt="logo">
+            <p class="footer_title">Мы в Instagram</p>
+            <a href="#"><img src="./assets/images/instagramm.svg" style="width: 36px;" alt="insta"></a>
+        </div>
+        <div class="list_section">
+            <p class="footer_title">Контакты</p>
+            <p class="footer_list">+7 (812) 123-45-67</p>
+            <p class="footer_list">+7 (911) 123-45-67</p>
+            <p class="footer_list">Новоостровский проспект, дом 36 лит. С</p>
+        </div>
+        <div class="list_section">
+            <p class="footer_title">Контакты</p>
+            <p class="footer_list">C 10:00 до 21:00 (Пн-Пт)</p>
+            <p class="footer_list">С 11:00 до 20:00 (Сб-Вс)</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/scripts/tabs.js"></script>
+<script src="./assets/scripts/slider.js"></script>
+</body>
+</html>
